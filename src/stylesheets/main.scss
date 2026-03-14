@@ -1,3 +1,98 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+h1 {
+  font-family: "Noto Sans Runic", sans-serif;
+}
+
+nav {
+  .homeBtn {
+    background-color: #32378c;
+
+    &:hover {
+      background-color: black;
+      border: 1px solid #32378c;
+    }
+  }
+
+  .otherBtn {
+    color: white;
+
+    &:hover {
+      background-color: black;
+      color: #f27d16;
+      border: 1px solid #f27d16;
+    }
+  }
+
+  .loginBtn {
+    background-color: #f27d16;
+    color: black;
+
+    &:hover {
+      background-color: #f29f05;
+    }
+  }
+}
+
+#hero-image {
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+section#introduction {
+  background-color: black;
+  color: #f27d16;
+
+  h1 {
+    span {
+      border: 3px solid #f27d16;
+    }
+  }
+
+  p {
+    background-color: #f27d16;
+    color: black;
+  }
+}
+
+section#questionnaire {
+  background-color: black;
+  color: white;
+  border-top: 4px solid #25296d;
+  border-bottom: 4px solid #25296d;
+
+  h1 {
+    span {
+      border: 3px solid #25296d;
+    }
+  }
+
+  div#questionnaireInfo {
+    p {
+      background-color: #25296d;
+    }
+
+    #questionnaireBtn {
+      background-color: #25296d;
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+        background-color: black;
+        border: 3px solid #25296d;
+      }
+    }
+  }
+}
+
+footer {
+  span#smallFooterText {
+    background-color: #f27d16;
+  }
+}
