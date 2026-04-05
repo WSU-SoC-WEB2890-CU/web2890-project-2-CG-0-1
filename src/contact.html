@@ -44,15 +44,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav justify-content-center flex-grow-1">
             <li class="nav-item pe-3 pe-lg-5">
-              <a class="nav-link fw-semibold homeBtn ps-2 px-md-3 mt-3 mt-md-0" aria-current="page" href="index.html"
-                >Home
-              </a>
+              <a class="nav-link fw-semibold otherBtn ps-2 px-md-3 mt-3 mt-md-0" href="index.html">Home </a>
             </li>
             <li class="nav-item pe-3 pe-lg-5">
               <a class="nav-link fw-semibold otherBtn ps-2 px-md-3 mt-3 mt-md-0" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold otherBtn ps-2 px-md-3 mt-3 mt-md-0" href="contact.html">Contact Us</a>
+              <a class="nav-link fw-semibold homeBtn ps-2 px-md-3 mt-3 mt-md-0" aria-current="page" href="contact.html"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
@@ -62,92 +62,58 @@
       </div>
     </nav>
 
-    <!-- Hero Image -->
-    <div id="heroImg" class="position-relative">
-      <img
-        src="images/vitaly-gariev-7HUkGlp4NjQ-unsplash.jpg"
-        class="img-fluid z-n1"
-        alt="Man getting ready to drink a cup"
-      />
-    </div>
+    <!-- Title -->
+    <h1 class="text-center fw-bold pt-3 pb-5">Contact Us</h1>
 
-    <!-- Mini Introduction -->
-    <div id="miniIntro" class="py-5">
-      <h1 class="text-center fw-bold text-success-emphasis pb-4">Who Are We?</h1>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 d-md-none">
-            <div class="pb-4 pb-md-0">
-              <img
-                src="images/vitaly-gariev-ZFBrAHDW9P4-unsplash.jpg"
-                class="img-fluid rounded-5"
-                alt="Therapist is filing up a paper with the title 'Psychology Test'"
-              />
-            </div>
-          </div>
-          <div class="col-12 fw-semibold text-center col-md-6 col-lg-5">
-            <p class="text-start ms-2 me-3 ms-md-0">
-              PsyBari is a clinically focused company with the objective of providing an easy and secure access to
-              doctors for people who are in need of a weight loss surgery.
-            </p>
-            <p class="text-start d-none d-lg-block me-md-3">
-              The methodology that PsyBari uses is a questionnaire that was specifically designed to evaluate the
-              candidacy of a patient for weight loss surgery if the patient in questioned presented characteristics that
-              deemed an immediate weight loss surgey since PsyBari is in contact with doctor and medical facilities
-              which specialize in weight loss surgery for people who are morbidly obese.
-            </p>
-          </div>
-          <div class="d-none d-md-block col-md-6 col-lg-7">
-            <div class="pb-4 pb-md-0">
-              <img
-                src="images/vitaly-gariev-ZFBrAHDW9P4-unsplash.jpg"
-                class="img-fluid rounded-5"
-                alt="Therapist is filing up a paper with the title 'Psychology Test'"
-              />
-            </div>
-          </div>
-        </div>
+    <!-- Contact Form -->
+    <form class="row mx-4 g-3 rounded-4 px-3 mb-5 py-4">
+      <!-- Full Name -->
+      <div class="col-12 d-md-none">
+        <label for="name" class="form-label fw-semibold">Name</label>
+        <input type="text" class="form-control" id="name" />
       </div>
-    </div>
 
-    <!-- Service we provide -->
-    <div id="questionnare" class="py-5">
-      <h1 class="text-center fw-bold pb-5">Our Questionnare</h1>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-6">
-            <div class="pb-5 pb-md-0">
-              <img
-                src="images/notes-62.png"
-                class="img-fluid rounded-5"
-                alt="An image of a pair of notes joined by a clipper"
-              />
-            </div>
-          </div>
-          <div class="col-12 col-md-6 fw-semibold text-center">
-            <p class="text-start ms-3 me-2">
-              <span class="d-none d-lg-inline">As stated above,&nbsp;</span>Psybari is a clinically focused company
-              which uses a specific questionnaire to evaluate the candidacy of a patient for weight loss surgery.
-            </p>
-            <p class="text-start d-none d-lg-block ms-md-3">
-              However, do beware that Psybari is not only in contact with doctors and medical facilities specialized in
-              weight loss surgery but also that the questionnaire was specifically designed for individuals who are
-              morbidly obese.
-            </p>
-            <a class="btn mt-2 fw-bold" href="services.html" role="button">Check the Questionnare</a>
-          </div>
-        </div>
+      <!-- First Name -->
+      <div class="d-none d-md-block col-md-6">
+        <label for="fname" class="form-label fw-semibold">First Name</label>
+        <input type="text" class="form-control" id="fname" />
       </div>
-    </div>
 
-    <!-- Explain the process via steps -->
-    <div id="contact" class="text-center py-5 d-lg-none">
-      <h1 class="fw-bold pb-4">HAVE ANY QUESTIONS?</h1>
-      <div class="d-none text-center fw-semibold d-md-block mb-2 mx-5 py-3 rounded-4">
-        If there is something you want to know about us, feel free to contact us at any time.
+      <!-- Last Name -->
+      <div class="d-none d-md-block col-md-6">
+        <label for="lname" class="form-label fw-semibold">Last Name</label>
+        <input type="text" class="form-control" id="lname" />
       </div>
-      <a class="btn fw-bold mt-md-4" href="contact.html" role="button">Contact Us</a>
-    </div>
+
+      <!-- Email -->
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label fw-semibold">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" />
+      </div>
+
+      <!-- Message Subject -->
+      <div class="col-12">
+        <label for="messageSubject" class="form-label fw-semibold">Message Subject</label>
+        <input type="text" class="form-control" id="messageSubject" />
+      </div>
+
+      <!-- Message -->
+      <div class="col-12">
+        <label for="exampleFormControlTextarea1" class="form-label fw-semibold">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+      </div>
+
+      <!-- Button -->
+      <div class="col-12 d-flex justify-content-center">
+        <button
+          type="submit"
+          class="fw-semibold btn"
+          style="background-color: black; display: block; width: 100%; color: #f5f5f5"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
 
     <!-- Footer -->
     <footer class="pt-3 pb-1 bg-black">
